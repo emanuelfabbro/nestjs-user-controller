@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "ac8c2436-4fc6-4385-a574-cd2794a1a0cf",
+		"name": "User-controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19112534"
+	},
+	"item": [
+		{
+			"name": "Buscar usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/user/getUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"getUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"userName\": \"efabbro\",\r\n      \"fullName\": \"Emanuel Fabbro\",\r\n      \"email\": \"fabbroemanuel7@gmail.com\",\r\n      \"creationDate\": \"2024-04-16T08:29:50.701Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/createUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
